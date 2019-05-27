@@ -2,27 +2,27 @@ public class TimeRunningState extends StopwatchState {
 
 	public void reset() {
 		// TODO - implement TimeRunningState.reset
-		throw new UnsupportedOperationException();
+		System.out.println("reset knop ingedrukt");
 	}
 
 	public void start() {
 		// TODO - implement TimeRunningState.start
-		throw new UnsupportedOperationException();
+		System.out.println("start knop ingedrukt");
 	}
 
 	public void stop() {
 		// TODO - implement TimeRunningState.stop
-		throw new UnsupportedOperationException();
+		System.out.println("stop knop igedrukt");
 	}
 
 	public void on() {
 		// TODO - implement TimeRunningState.on
-		throw new UnsupportedOperationException();
+		System.out.println("aan knop ingedrukt");
 	}
 
 	public void off() {
 		// TODO - implement TimeRunningState.off
-		throw new UnsupportedOperationException();
+		System.out.println("uit knop ingedrukt");
 	}
 
 }

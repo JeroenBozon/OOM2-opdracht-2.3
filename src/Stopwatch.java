@@ -6,32 +6,36 @@ public class Stopwatch {
 
 	public void start() {
 		// TODO - implement Stopwatch.start
-		throw new UnsupportedOperationException();
+		state.start();
 	}
 
 	public void stop() {
 		// TODO - implement Stopwatch.stop
-		throw new UnsupportedOperationException();
+		state.stop();
 	}
 
 	public void reset() {
 		// TODO - implement Stopwatch.reset
-		throw new UnsupportedOperationException();
+		state.reset();
 	}
 
 	public void lap() {
 		// TODO - implement Stopwatch.lap
-		throw new UnsupportedOperationException();
+		state.lap();
 	}
 
 	public void on() {
 		// TODO - implement Stopwatch.on
-		throw new UnsupportedOperationException();
+		state.on();
 	}
 
 	public void off() {
 		// TODO - implement Stopwatch.off
-		throw new UnsupportedOperationException();
+		state.off();
 	}
 
+	public void changeState(StopwatchState state){
+		this.state = state;
+
+	}
 }
