@@ -1,23 +1,20 @@
 public class TimeStoppedState extends StopwatchState {
 
-	public void lap() {
-		// TODO - implement TimeStoppedState.lap
-		throw new UnsupportedOperationException();
+	public void reset(Stopwatch stopwatch) {
+		System.out.println("RESET");
 	}
 
-	public void stop() {
-		// TODO - implement TimeStoppedState.stop
-		throw new UnsupportedOperationException();
+	public void stop(Stopwatch stopwatch) {
+		System.out.println("STOP");
 	}
 
-	public void off() {
-		// TODO - implement TimeStoppedState.off
-		throw new UnsupportedOperationException();
+	public void off(Stopwatch stopwatch) {
+		System.out.println("OFF");
 	}
 
-	public void start() {
-		// TODO - implement TimeStoppedState.start
-		throw new UnsupportedOperationException();
+	public void start(Stopwatch stopwatch) {
+		stopwatch.changeState(new TimeRunningState());
+		System.out.println("START");
 	}
 
 }

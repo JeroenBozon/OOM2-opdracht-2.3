@@ -1,15 +1,27 @@
 public abstract class StopwatchState {
 
-	public abstract void start();
+	public void start(Stopwatch stopwatch) {
 
-	public abstract void stop();
+	}
 
-	public void reset() {}
+	public void stop(Stopwatch stopwatch) {
 
-	public void lap() {}
+	}
 
-	public abstract void on();
+	public void reset(Stopwatch stopwatch) {
 
-	public abstract void off();
+	}
+
+	public void lap(Stopwatch stopwatch) {
+
+	}
+
+	public void on(Stopwatch stopwatch) {
+
+	}
+
+	public void off(Stopwatch stopwatch) {
+
+	}
 
 }

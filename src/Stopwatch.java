@@ -1,41 +1,32 @@
 public class Stopwatch {
 
 	private StopwatchState state;
-	private double hour;
-	private double minute;
 
 	public void start() {
-		// TODO - implement Stopwatch.start
-		state.start();
+		state.start(this);
 	}
 
 	public void stop() {
-		// TODO - implement Stopwatch.stop
-		state.stop();
+		state.stop(this);
 	}
 
 	public void reset() {
-		// TODO - implement Stopwatch.reset
-		state.reset();
+		state.reset(this);
 	}
 
 	public void lap() {
-		// TODO - implement Stopwatch.lap
-		state.lap();
+		state.lap(this);
 	}
 
 	public void on() {
-		// TODO - implement Stopwatch.on
-		state.on();
+		state.on(this);
 	}
 
 	public void off() {
-		// TODO - implement Stopwatch.off
-		state.off();
+		state.off(this);
 	}
 
 	public void changeState(StopwatchState state){
 		this.state = state;
-
 	}
 }

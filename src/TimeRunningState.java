@@ -1,28 +1,24 @@
 public class TimeRunningState extends StopwatchState {
 
-	public void reset() {
-		// TODO - implement TimeRunningState.reset
-		System.out.println("reset knop ingedrukt");
+	public void lap(Stopwatch stopwatch) {
+		System.out.println("LAP");
 	}
 
-	public void start() {
-		// TODO - implement TimeRunningState.start
-		System.out.println("start knop ingedrukt");
+	public void start(Stopwatch stopwatch) {
+		System.out.println("START");
 	}
 
-	public void stop() {
-		// TODO - implement TimeRunningState.stop
-		System.out.println("stop knop igedrukt");
+	public void stop(Stopwatch stopwatch) {
+		stopwatch.changeState(new TimeStoppedState());
+		System.out.println("STOP");
 	}
 
-	public void on() {
-		// TODO - implement TimeRunningState.on
-		System.out.println("aan knop ingedrukt");
+	public void on(Stopwatch stopwatch) {
+		System.out.println("ON");
 	}
 
-	public void off() {
-		// TODO - implement TimeRunningState.off
-		System.out.println("uit knop ingedrukt");
+	public void off(Stopwatch stopwatch) {
+		System.out.println("OFF");
 	}
 
 }
